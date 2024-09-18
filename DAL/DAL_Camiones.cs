@@ -19,7 +19,7 @@ namespace DAL
             try
             {
                 //crear un Dataset el cual recibirá lo que devuelva la ejecución del método "execute_Dataset" proviniente de la clase "metodos_Datos"
-                DataSet ds_camiones = metodos_datos.execute_DataSet("", parametros);
+                DataSet ds_camiones = metodos_datos.execute_DataSet("sp_ListarCamiones", parametros);
                 //recorremos cada renglón existente de nuestro ds crando objetos VO y añadiéndolo la lista
                 foreach (DataRow dr in ds_camiones.Tables[0].Rows)
                 {
