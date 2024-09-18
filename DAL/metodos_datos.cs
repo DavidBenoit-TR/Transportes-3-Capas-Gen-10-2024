@@ -13,7 +13,6 @@ namespace DAL
         //método para ejecutar un dataset
         //Utilizado para ejecutar una consulta SQL que devuelve un conjunto de datos
         //que puede contener una o varias tablas con filas y columnas de datos.
-
         public static DataSet execute_DataSet(string sp, params object[] parametros)
         {
             //instanciamos un DS (DataSet) => Objeto de ADO
@@ -83,7 +82,6 @@ namespace DAL
                 }
             }
         }
-
         //Métodod que ejecuta un escalar
         //ejecuta una consulta SQL que devuelve un solo valor o una sola columna de dats.
         //retorna el valor de la primera columna y la primera fila del conjutno de resutltado
@@ -154,13 +152,11 @@ namespace DAL
                 }
             }
         }
-
         //Método que ejecuta un NonQuery
         //Utilizado para ejecutar consultas SQL que no devuelven un conjunto de resultados.
         //como sentencias INSERT, UPDATE o DELETE.
         //Retorna un valor entero  que representa el número de filas afectadas por la operación.
         //(por ejemplo, el número de filas insertadas, actualizdas o eliminadas).
-
         public static int execute_nonQuery(string sp, params object[] parametros)
         {
             //variable para el control del resultado

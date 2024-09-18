@@ -27,5 +27,6 @@ namespace DAL
         {
             get { return _cadenaConexion; }
         }
+
     }
 }
