@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Camiones_VO.cs" />
+    <Compile Include="Cargamentos_VO.cs" />
+    <Compile Include="Choferes_VO.cs" />
+    <Compile Include="Direcciones_VO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

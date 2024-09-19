@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL_Camiones.cs" />
+    <Compile Include="BLL_Cargamentos.cs" />
+    <Compile Include="BLL_Choferes.cs" />
+    <Compile Include="BLL_Direcciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

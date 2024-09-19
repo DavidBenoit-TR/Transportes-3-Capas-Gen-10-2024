@@ -8,20 +8,20 @@ using VO;
 
 namespace DAL
 {
-    public class DAL_Direcciones
+    public class DAL_Cargamentos
     {
-        public static List<Direcciones_VO> get_Direcciones(params object[] parametros)
+        public static List<Cargamentos_VO> get_Cargamentos(params object[] parametros)
         {
-            List<Direcciones_VO> list_direcciones = new List<Direcciones_VO>();
+            List<Cargamentos_VO> list_Cargamentos = new List<Cargamentos_VO>();
             try
             {
-                DataSet ds_camiones = metodos_datos.execute_DataSet("sp_ListarDirecciones", parametros);
+                DataSet ds_camiones = metodos_datos.execute_DataSet("sp_ListarCargamentos", parametros);
 
                 foreach (DataRow dr in ds_camiones.Tables[0].Rows)
                 {
-                    list_direcciones.Add(new Direcciones_VO(dr));
+                    list_Cargamentos.Add(new Cargamentos_VO(dr));
                 }
-                return list_direcciones;
+                return list_Cargamentos;
             }
             catch (Exception ex)
             {
