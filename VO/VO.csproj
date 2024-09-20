@@ -46,6 +46,7 @@
     <Compile Include="Choferes_VO.cs" />
     <Compile Include="Direcciones_VO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rutas_VO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

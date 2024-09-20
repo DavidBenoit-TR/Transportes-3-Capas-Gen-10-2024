@@ -46,6 +46,7 @@
     <Compile Include="DAL_Cargamentos.cs" />
     <Compile Include="DAL_Choferes.cs" />
     <Compile Include="DAL_Direcciones.cs" />
+    <Compile Include="DAL_Rutas.cs" />
     <Compile Include="metodos_datos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
