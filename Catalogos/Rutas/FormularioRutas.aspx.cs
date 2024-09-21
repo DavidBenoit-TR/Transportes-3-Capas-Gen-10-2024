@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Transportes_3_Capas_Gen_10.Utilidades;
 using VO;
 
 namespace Transportes_3_Capas_Gen_10.Catalogos.Rutas
@@ -205,12 +206,16 @@ namespace Transportes_3_Capas_Gen_10.Catalogos.Rutas
                     titulo = "Error";
                     msg = respuesta;
                     tipo = "error";
+                    //sweet alert
+                    sweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType());
                 }
                 else
                 {
                     titulo = "Ok!";
                     msg = respuesta;
                     tipo = "success";
+                    //sweet alert
+                    sweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType(), "/catalogos/rutas/listarrutas.aspx");
                 }
             }
             catch (Exception ex)
@@ -218,6 +223,8 @@ namespace Transportes_3_Capas_Gen_10.Catalogos.Rutas
                 titulo = "Error";
                 msg = ex.Message;
                 tipo = "error";
+                //sweet alert
+                sweetAlert.Sweet_Alert(titulo, msg, tipo, this.Page, this.GetType());
             }
         }
     }
