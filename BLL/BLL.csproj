@@ -46,6 +46,7 @@
     <Compile Include="BLL_Choferes.cs" />
     <Compile Include="BLL_Direcciones.cs" />
     <Compile Include="BLL_Rutas.cs" />
+    <Compile Include="BLL_Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
