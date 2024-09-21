@@ -69,24 +69,6 @@ namespace Transportes_3_Capas_Gen_10.Catalogos.Usuarios
         protected global::System.Web.UI.WebControls.DropDownList ddlrol;
 
         /// <summary>
-        /// Control lblestatus.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblestatus;
-
-        /// <summary>
-        /// Control chkestatus.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkestatus;
-
-        /// <summary>
         /// Control txtPassword.
         /// </summary>
         /// <remarks>

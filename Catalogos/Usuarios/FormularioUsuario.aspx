@@ -19,9 +19,6 @@
             <asp:Label ID="lblrol" runat="server" Text="Rol"></asp:Label>
             <asp:DropDownList ID="ddlrol" runat="server" CssClass="form-control"></asp:DropDownList>
 
-            <asp:Label ID="lblestatus" runat="server" Text="Rol"></asp:Label>
-            <asp:CheckBox ID="chkestatus" runat="server" />
-
             <asp:Label runat="server">Nueva Contraseña</asp:Label>
             <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="txtPassword" ErrorMessage="La contraseña es necesaria" ValidationGroup="Login"></asp:RequiredFieldValidator>

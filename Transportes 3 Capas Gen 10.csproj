@@ -105,6 +105,7 @@
     <Content Include="Catalogos\Rutas\FormularioRutas.aspx" />
     <Content Include="Catalogos\Rutas\listarRutas.aspx" />
     <Content Include="Catalogos\Usuarios\FormularioUsuario.aspx" />
+    <Content Include="Catalogos\Usuarios\listarusuarios.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -231,6 +232,13 @@
     </Compile>
     <Compile Include="Catalogos\Usuarios\FormularioUsuario.aspx.designer.cs">
       <DependentUpon>FormularioUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Usuarios\listarusuarios.aspx.cs">
+      <DependentUpon>listarusuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Usuarios\listarusuarios.aspx.designer.cs">
+      <DependentUpon>listarusuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
