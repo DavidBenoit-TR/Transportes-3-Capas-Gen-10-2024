@@ -29,14 +29,14 @@ namespace Transportes_3_Capas_Gen_10.Catalogos.Rutas
             if (e.CommandName == "Select")
             {
                 int varIndex = int.Parse(e.CommandArgument.ToString());
-                string id = GVRutas.DataKeys[varIndex].Values["IdRuta"].ToString();
+                string id = GVRutas.DataKeys[varIndex].Values["ID_Ruta"].ToString();
                 Response.Redirect("FormularioRutas.aspx?Id=" + id);
             }
         }
 
         protected void GVRutas_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            int idruta = int.Parse(GVRutas.DataKeys[e.RowIndex].Values["IdRuta"].ToString());
+            int idruta = int.Parse(GVRutas.DataKeys[e.RowIndex].Values["ID_Ruta"].ToString());
             string respuesta = BLL_Rutas.EliminarRuta(idruta);
             string titulo, msg, tipo;
             if (respuesta.ToUpper().Contains("ERROR"))
