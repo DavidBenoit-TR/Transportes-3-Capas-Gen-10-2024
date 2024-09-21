@@ -48,12 +48,19 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between" id="nav" runat="server">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Acerca de</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Camiones/listarCamiones">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Rutas/ListarRutas">Rutas</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Camiones/listarCamiones">Camiones</a></li>
+                        <%--Lista de usuarios--%>
+                        <li class="nav-item" id="Users" runat="server"><a class="nav-link" runat="server" href="~/Catalogos/Usuarios/ListarUsuarios">Lista de Usuarios</a></li>
                     </ul>
+                    <%--User y Logout--%>
+                    <div>
+                        <asp:Label ID="usuario" runat="server" CssClass="text-white"></asp:Label>
+                        <asp:Button ID="Logout" runat="server" OnClick="Logout_Click" Text="Salir" CssClass="btn btn-danger" />
+                    </div>
                 </div>
             </div>
         </nav>

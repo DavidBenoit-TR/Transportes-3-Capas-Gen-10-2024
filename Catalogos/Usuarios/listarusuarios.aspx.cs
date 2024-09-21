@@ -13,10 +13,40 @@ namespace Transportes_3_Capas_Gen_10.Catalogos.Usuarios
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            //recupero las variables de sesión
+            string session_user = (string)Session["user"];
+            string session_rol = (string)Session["rol"];
+
+            //valido si no están vacías
+            if (session_user != null)
             {
-                cargargrid();
+                if (!IsPostBack)
+                {
+                    //Valido acciones por usuario
+                    if (session_rol == "2")
+                    {
+                        //Esto es un Operativo
+                        //lo regreso al Login
+                        //vaciar las variables de sesión por seguridad
+                        Session.Clear();
+                        sweetAlert.sweetAlert2("Alto ahí loca", "No has iniciado sesión", "info", this.Page, this.GetType(), "/Login");
+                    }
+                    else
+                    {
+                        if (session_rol != "3")
+                        {
+                            Insertar.Enabled = false;
+                        }
+                        cargargrid();
+                    }
+                }
             }
+            else
+            {
+                sweetAlert.sweetAlert2("Alto ahí loca", "No has iniciado sesión", "info", this.Page, this.GetType(), "/Login");
+            }
+
+
         }
 
         protected void Insertar_Click(object sender, EventArgs e)
