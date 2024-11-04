@@ -12,6 +12,7 @@ namespace Transportes_3_Capas_Gen_10.Catalogos.Rutas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
                 cargargrid();

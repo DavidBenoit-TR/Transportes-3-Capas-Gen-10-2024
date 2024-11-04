@@ -60,6 +60,7 @@
                     <div>
                         <asp:Label ID="usuario" runat="server" CssClass="text-white"></asp:Label>
                         <asp:Button ID="Logout" runat="server" OnClick="Logout_Click" Text="Salir" CssClass="btn btn-danger" />
+                        <asp:Button ID="boton" runat="server" OnClick="boton_Click" />
                     </div>
                 </div>
             </div>

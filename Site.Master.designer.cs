@@ -51,6 +51,15 @@ namespace Transportes_3_Capas_Gen_10
         protected global::System.Web.UI.WebControls.Button Logout;
 
         /// <summary>
+        /// Control boton.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button boton;
+
+        /// <summary>
         /// Control MainContent.
         /// </summary>
         /// <remarks>

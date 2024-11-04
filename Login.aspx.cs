@@ -40,8 +40,7 @@ namespace Transportes_3_Capas_Gen_10
                 //creamos variables de sesión
                 Session["user"] = session[0];
                 Session["rol"] = session[1];
-                //muestro un msj y redirecciono
-                sweetAlert.Sweet_Alert("Bienvenido", $"Bienvenido de vuelta {session[0]}", "success", this.Page, this.GetType(), "/catalogos/Camiones/listarCamiones.aspx");
+
             }
         }
 
